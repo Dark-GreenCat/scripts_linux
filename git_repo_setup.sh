@@ -7,9 +7,9 @@ do
     read -r -p $'Repository name: ' repoName
 done
 
-echo "# Repo: $repoName" >> README.md
+echo "# Repo: $repoName" > README.md
 echo "# Author: Dark-GreenCat" >> README.md
-echo "# Date: $(date)" >> README.md
+echo "# Date created: $(date)" >> README.md
 touch .gitignore
 
 git init
